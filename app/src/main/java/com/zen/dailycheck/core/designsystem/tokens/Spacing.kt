@@ -1,4 +1,4 @@
-package com.zen.dailycheck.core.designsystem.theme
+package com.zen.dailycheck.core.designsystem.tokens
 
 import androidx.compose.ui.unit.dp
 
