@@ -38,7 +38,7 @@ fun AppRoot() {
 
 @Composable
 fun AppNavHost(
-    navController = navController,
+    navController : NavHostController,
     modifier: Modifier = Modifier
 ) {
 
