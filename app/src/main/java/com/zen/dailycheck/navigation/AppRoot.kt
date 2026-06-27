@@ -1,9 +1,12 @@
 package com.zen.dailycheck.navigation
 
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.NavHostController
 
 @Composable
 fun AppRoot() {
@@ -24,11 +27,19 @@ fun AppRoot() {
             )
         }
     ) { paddingValues ->
-
         AppNavHost(
-            navController = navController
+            navController = navController,
+            Modifier.padding(paddingValues)
         )
 
     }
+
+}
+
+@Composable
+fun AppNavHost(
+    navController = navController,
+    modifier: Modifier = Modifier
+) {
 
 }
